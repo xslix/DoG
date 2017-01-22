@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class DayNightSwitcher : MonoBehaviour {
 
+    public AudioClip sound;
     public GameObject light;
     public bool isDay = true;
-    public float dayDuration = 60;
-    float currentTime = 0;     
+    public float dayDuration = 2;
+    float currentTime = 0;
+    public AudioSource Rooster;
+
     // Use this for initialization
 	void Start () {
-        
-	}
+        sound = (AudioClip)Resources.Load("rooster");
+        Rooster = GetComponent<AudioSource>();
+        Rooster.Play();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -22,9 +27,17 @@ public class DayNightSwitcher : MonoBehaviour {
     {
         if (currentTime % (dayDuration * 2) <= dayDuration)
         {
+            if (!isDay)
+            {
+                Rooster.Play();
+            }
             isDay = true;
         } else
         {
+            if (isDay)
+            {
+                Rooster.Play();
+            }
             isDay = false;
         }
         if (isDay)
