@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: 15bd5ae7d0b150a4d9796db6bce3e8fe
+timeCreated: 1485046721
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: decor_elka_0
+    21300002: decor_elka_1
+    21300004: decor_elka_2
+    21300006: decor_elka_3
+    21300008: decor_elka_4
+    21300010: decor_tree1_0
+    21300012: decor_derevo_0
+    21300014: decor_derevo_1
+    21300016: decor_derevo_2
+    21300018: decor_derevo_3
+    21300020: decor_derevo_4
+    21300022: decor_tree1_1
+    21300024: decor_elka2_0
+    21300026: decor_elka2_1
+    21300028: decor_elka2_2
+    21300030: decor_elka2_3
+    21300032: decor_elka2_4
+    21300034: decor_tree1_4
+    21300036: decor_tree1_3
+    21300038: decor_tree1_2
+    21300040: decor_tree_0
+    21300042: decor_tree_1
+    21300044: decor_tree_2
+    21300046: decor_tree_3
+    21300048: decor_tree_4
+    21300050: decor_elka1_0
+    21300052: decor_elka1_1
+    21300054: decor_elka1_2
+    21300056: decor_elka1_3
+    21300058: decor_elka1_4
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 80
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: decor_elka_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1483
+        width: 278
+        height: 517
+      alignment: 9
+      pivot: {x: 0.5273984, y: 0.04080147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_elka_1
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1484
+        width: 277
+        height: 516
+      alignment: 9
+      pivot: {x: 0.51125777, y: 0.034246165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_elka_2
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1484
+        width: 272
+        height: 516
+      alignment: 9
+      pivot: {x: 0.49617857, y: 0.03626056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_elka_3
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 1484
+        width: 276
+        height: 516
+      alignment: 9
+      pivot: {x: 0.48493537, y: 0.032231532}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_elka_4
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 1486
+        width: 273
+        height: 514
+      alignment: 9
+      pivot: {x: 0.47715452, y: 0.032356944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_tree1_0
+      rect:
+        serializedVersion: 2
+        x: 2516
+        y: 1443
+        width: 432
+        height: 530
+      alignment: 9
+      pivot: {x: 0.44897065, y: 0.031806916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_tree_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 946
+        width: 469
+        height: 535
+      alignment: 9
+      pivot: {x: 0.5086107, y: 0.022645298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_tree_1
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 934
+        width: 470
+        height: 538
+      alignment: 9
+      pivot: {x: 0.5028641, y: 0.025021238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_tree_2
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 937
+        width: 472
+        height: 535
+      alignment: 9
+      pivot: {x: 0.48288816, y: 0.022645298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_tree_3
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 947
+        width: 470
+        height: 537
+      alignment: 9
+      pivot: {x: 0.4799511, y: 0.022561071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_tree_4
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 939
+        width: 471
+        height: 535
+      alignment: 9
+      pivot: {x: 0.47141948, y: 0.022645298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_tree1_1
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 900
+        width: 432
+        height: 530
+      alignment: 9
+      pivot: {x: 0.44194597, y: 0.02547976}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_elka1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 332
+        width: 260
+        height: 530
+      alignment: 9
+      pivot: {x: 0.5040722, y: 0.021974212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_elka1_1
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 332
+        width: 263
+        height: 530
+      alignment: 9
+      pivot: {x: 0.5000001, y: 0.021974212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_elka1_2
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 332
+        width: 264
+        height: 529
+      alignment: 9
+      pivot: {x: 0.49197918, y: 0.02001434}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_elka1_3
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 332
+        width: 265
+        height: 528
+      alignment: 9
+      pivot: {x: 0.4680376, y: 0.022057446}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_elka1_4
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 336
+        width: 269
+        height: 526
+      alignment: 9
+      pivot: {x: 0.44489774, y: 0.022141315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_tree1_4
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 316
+        width: 432
+        height: 528
+      alignment: 9
+      pivot: {x: 0.41738468, y: 0.027403167}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_tree1_3
+      rect:
+        serializedVersion: 2
+        x: 2063
+        y: 332
+        width: 432
+        height: 528
+      alignment: 9
+      pivot: {x: 0.42631587, y: 0.031056896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: decor_tree1_2
+      rect:
+        serializedVersion: 2
+        x: 2539
+        y: 352
+        width: 432
+        height: 530
+      alignment: 9
+      pivot: {x: 0.43301448, y: 0.0309397}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

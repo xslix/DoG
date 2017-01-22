@@ -12,6 +12,7 @@ public class Unit_graphics : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y * 0.001f);
+
 		
 	}
 }
