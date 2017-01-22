@@ -2,54 +2,72 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DayNightSwitcher : MonoBehaviour {
+public class DayNightSwitcher : Photon.MonoBehaviour {
 
-    public AudioClip sound;
     public GameObject light;
     public bool isDay = true;
-    public float dayDuration = 2;
-    float currentTime = 0;
+    public bool isNight = false;
+    public float dayDuration = 10;
+    float switchTime = 0;
     public AudioSource Rooster;
+    public AudioSource Wolf;
 
     // Use this for initialization
 	void Start () {
-        sound = (AudioClip)Resources.Load("rooster");
-        Rooster = GetComponent<AudioSource>();
-        Rooster.Play();
     }
-	
-	// Update is called once per frame
-	void Update () {
-        StartCoroutine("DynamicDayNight");
-	}
 
-    IEnumerator DynamicDayNight()
+
+    // Update is called once per frame
+    void Update()
     {
-        if (currentTime % (dayDuration * 2) <= dayDuration)
+
+        if (Time.time - switchTime > dayDuration && PhotonNetwork.isMasterClient)
         {
-            if (!isDay)
-            {
-                Rooster.Play();
-            }
-            isDay = true;
-        } else
-        {
+
             if (isDay)
-            {
-                Rooster.Play();
-            }
-            isDay = false;
+                photonView.RPC("DayNightSW", PhotonTargets.All);
+            else
+                photonView.RPC("NightDaySW", PhotonTargets.All);
+
         }
-        if (isDay)
+    }
+        
+    
+
+    [PunRPC]
+    void DayNightSW()
+    {
+        Wolf.Play();
+        isDay = false;
+        isNight = true;
+        switchTime = Time.time;
+        StartCoroutine("switchDayToNight");
+    }
+
+    [PunRPC]
+    void NightDaySW()
+    {
+        Rooster.Play();
+        isDay = true;
+        isNight = false;
+        switchTime = Time.time;
+        StartCoroutine("switchNightToDay");
+    }
+
+    IEnumerator switchDayToNight()
+    {
+        while (light.GetComponent<Light>().intensity > 0.4f)
         {
-            float coef = Mathf.Abs(dayDuration / 2 - currentTime % (dayDuration * 2));
-            light.GetComponent<Light>().intensity = 1.8f - 2.4f * coef / dayDuration;
-        } else
-        {
-            float coef = Mathf.Abs(dayDuration * 3 / 2 - currentTime % (dayDuration * 2));
-            light.GetComponent<Light>().intensity = 1.2f * coef / dayDuration;
+            light.GetComponent<Light>().intensity -= 0.1f;
+            yield return new WaitForSeconds(0.1f);
         }
-        currentTime = Time.time;
-        yield return null;
+    }
+    IEnumerator switchNightToDay()
+    {
+        while (light.GetComponent<Light>().intensity < 1.8f)
+        {
+            light.GetComponent<Light>().intensity += 0.1f;
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 }
